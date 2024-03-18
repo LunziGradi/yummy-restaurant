@@ -1,21 +1,30 @@
 #description
+
 web-master: gradi lunzi
-github name : LunziGradi
-yummy est un site de restauration plus basé sur les fast-food
-lirn demo :
-#fonctionnalités
--mise en exergue des produits présents
--gestion user
+Github user name : LunziGradi
+Specialité : developpement web full stack
+thème du site : retsaurant
+Yummy est un site de restauration plus basé sur les fast-foods
+Font : merryweather (font-awesome)
+Lien demo :
 
-#technologies
--bootstrapp(gestion de contenu)
--fontawesome (icone)
+#Fonctionnalités
 
-#licence
+-Mise en exergue des produits présents
+-Gestion user
+-Commande des plats
 
-ce site est sous licence Mit (open source, flexible)
+#Technologies
+
+-Bootstrapp(gestion de contenu)
+-Fontawesome (icone)
+
+#Licence
+
+Ce site est sous licence Mit (open source, flexible)
 
 #contact
-pour tout contact
+
+Pour tout contact:
 gmail: gradikidimba299@gmail.com
 whatsapp : +243820701979
