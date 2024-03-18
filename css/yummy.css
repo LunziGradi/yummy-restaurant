@@ -1,0 +1,440 @@
+*{
+    margin:0;
+    padding:0;  
+    font-family:  'Ubuntu', sans-serif;
+    font-size: 16px;
+    color:gray; 
+
+}
+body{
+    background-color: rgba(254, 250, 250,1);
+}
+header{
+    display: flex;
+
+    backdrop-filter: blur(7px);
+    height:90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index:6;
+}
+
+/*------class générale------*/
+section{
+    margin-bottom: 50px;
+}
+.grand{
+    font-size: 60px;
+}
+#c-c{
+    margin-right: 0;    
+}
+
+.orange{
+    color:orange;
+}
+.orangered{
+    color: orangered;
+}
+.bold{
+    font-weight: bold;
+}
+h1,.black{
+    color:#000;    
+}
+.gold{
+    color:gold;
+}
+.mr-3{
+    margin-right: 5px;   
+}
+.b-r{
+    border-radius: 8px;
+}
+.space-in{
+    display: flex;
+    justify-content: space-between;
+}
+.padd{
+    padding:15px;
+}
+.white{
+    color: white;
+}
+
+.collum{
+    flex-direction:column;
+}
+.img-box{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.price{
+    text-decoration: line-through;
+    color: red;
+    font-weight: bold;
+}
+.l-p{
+    align-items: center;
+    color: gray;
+}
+
+/*------class générale------*/
+/*-------bars--------*/
+#bars,.bar{
+    display:none;
+}
+
+@media (max-width:1051px) {
+    header{
+        justify-content: space-between;
+    }
+    header .bar{
+        display:contents;
+        margin-top:50px!important;
+        color: orange;
+        cursor: pointer ;
+    }
+    #high{
+        height:1200px!important;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-bottom: 0;
+        color: gray;
+
+    }
+    li a{
+        color: gray;
+        margin: 10px;
+    }
+
+    #subscribe,#connect{
+        border: none;;
+        background-color: #fff;
+        color:gray;
+        padding-left: 0!important;
+        height: 0;
+    }
+    #subscribe:hover,#connect:hover{
+        color: orange;
+        outline: none;
+    }
+
+    .menu{
+        display: block;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 2px 3px 10px 2px gray ;
+        position: absolute;
+        z-index: 20;
+        width:60%;
+        text-align: center;
+        justify-content: space-around;
+        top: 80px;
+        right:0px;
+        height:300px;
+        transform: translateX(102%);
+        transition:.9s;
+         
+    }
+    #bars:checked + .menu{
+        transform: translateX(0);
+        transition:.9s;
+    }
+    .contacter{
+        padding:4px;
+    }
+    
+    
+}
+
+
+
+/*------logo---------------*/
+.logo{
+    width:60px;
+    height:60px;
+}
+ul,li,a{
+    list-style-type: none;
+    display: flex;
+    color: black;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+a:hover{
+    text-decoration: none;
+    color: orange;
+    transition: .3s;
+}
+#subscribe{
+    width: 110px;
+    padding-left: 20px;
+}
+.classic-btn{
+    background-color: orange;
+    border-radius: 15px;
+    padding: 10px;
+    height: 40px;
+    transition:.3s;
+    text-align: center!important;
+    
+}
+.classic-btn:hover{
+    color:orange;
+    outline: 1px solid rgba(255, 166, 0, 0.649);
+    background-color: transparent;
+    text-decoration: none;
+    transition:.3s;
+}
+.box{
+    padding-top: 150px;
+   padding-right:50px ;
+}
+.box-right{
+    margin-top: 200px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+.box-right #pizza:hover + .rideau,.rideau:hover{
+    transform: translateX(0);
+    transition: 1s;
+}
+
+#pointeuse{
+    margin-top: -60px; 
+    width: 100%;
+}
+#pizza{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: center;
+    border-radius: 8px  ;
+}
+
+#reduction{
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    width:110px;
+    height:110px;
+    border-radius: 100%;
+    margin-bottom: -30px;
+    transform: rotate(-30deg);
+    background-color: red;
+    z-index: 4;
+    box-shadow: 4px 4px 7px 1px pink inset;
+}
+#reduction span{
+    font-size: 25px; 
+}
+.object{
+    margin:21px;
+    border-radius: 15px;
+    background-color:#fff;
+    padding:15px;
+    box-shadow: 2px 3px 10px 2px gray ;
+    cursor: pointer;    
+    transition: .4s;
+
+}
+.object:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+#enlireplus{
+    width:200px;
+    margin: auto;
+    margin-top: 30px;   
+}
+.rideau{
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 100%;
+    height:100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+    transition: 1s;
+    
+}
+.resto{
+    padding:0;
+    overflow: hidden;
+}
+.resto img:hover + .rideau,.rideau:hover{
+    transform: translateX(0);
+    transition: 1s;
+}
+.recette, .commande{
+    text-align: center;
+    width:160px;
+    margin: auto;
+    margin-top: 30%;
+    background-color: orangered;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+.circle{
+    width:120px;
+    height:120px;
+    border-radius: 100%;
+    background-color: orange;
+    box-shadow: 2px 3px 10px 2px gray ;
+
+}
+#envoi{
+    background-color: orange;
+    text-align: center;
+}
+input,button{
+    width:30%;
+    /* margin-right:5px; */
+    height: 40px;
+    border-style: hidden;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+input:active,input:focus,textarea:focus{
+    box-shadow: 2px 2px 5px 1px gray ;
+    outline: none;
+}
+textarea{
+    border: hidden;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%; 
+}
+footer{
+    width:100%;
+    height: 300px;
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+}
+.ico-foot{
+    padding-left: 30%;
+}
+.pied-foot{
+    color:#000; 
+    width:100%;
+}
+/*----------formulaire de connexion--------*/
+#bcg-cnt{
+
+    width: 100%;
+    height: 100%;
+    
+}
+#connexion{
+    margin-top: 100px!important;
+    margin: auto;
+    border-radius: 8px;
+    height:400px;
+    width:300px;
+    padding: 10px;
+
+
+}
+form input,form button  {
+    margin-top: 25px;
+    width:100%;
+}
+form a, form span {
+    margin-top: 25px;
+    font-size: 12px;
+    color: gray;
+}
+#inp{
+    width:15px;
+    margin-top: 12px;
+    margin-right: 2px;
+}
+
+#connexion div{
+    display: flex;
+
+}
+
+.contacter img{
+    width: 100%;
+    position:absolute;
+    background-size: cover;
+}
+
+.contacter h1, .contacter .icone{
+    position: relative;
+    
+}
+.contacter h1{
+    padding-top: 170px;
+}
+.contacter .icone{
+    margin-top:50px;
+}
+.contacter form{
+    padding: 20px;
+    width: 100%;
+    padding-top: 150px;
+    
+    
+}
+.opt i{
+    color:white;
+    padding: 10px;
+}
+.chef{
+    margin-top: 10px;
+    transition: .4s;
+}
+.chef:hover{
+    transform: scale(1.15);
+    transition: .4s;
+
+}
+.detail{
+    background-color: rgba(255, 166, 0, 0.867);
+    margin-top: 10px;
+    padding-top: 20px;
+    border-radius: 8px;
+    height: 100px;
+    text-align: center;
+}
+.insta{
+    color:mediumvioletred;
+}
+.fb{
+    color:blue;
+}
+.dodger{
+    color:dodgerblue
+}   
+/*----------qui sommes nous -------*/
+#femmeF{
+    margin-top: -150px;
+}
+.b{
+    margin-top: 200px;
+    position: relative;
+    padding: 0px;
+}
+/*--------inscription---------*/
+#imglog{
+   width:400px;
+}
+
