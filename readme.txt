@@ -10,9 +10,8 @@ Lien demo :
 
 #Fonctionnalités
 
--Mise en exergue des produits présents
 -Gestion user
--Commande des plats
+-Gestion commandes
 
 #Technologies
 
