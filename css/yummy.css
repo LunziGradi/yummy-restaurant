@@ -141,12 +141,12 @@ h1,.black{
         right:0px;
         height:300px;
         transform: translateX(102%);
-        transition:.9s;
+        transition:.3s;
          
     }
     #bars:checked + .menu{
         transform: translateX(0);
-        transition:.9s;
+        transition:.3s;
     }
     .contacter{
         padding:4px;
